@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  background-color: white;
+}
+
+.title-box {
+  margin: .25rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  padding-top: .25rem;
+}

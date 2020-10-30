@@ -4,7 +4,7 @@ import Body from './Body';
 
 function App() {
   return (
-    <div>
+    <div className="container-fluid">
       <Header />
       {<Body />}
     </div>

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background-color: hsl(35, 48%, 91%);
+}
+
+.row {
+  padding: 0; /* override bootstrap */
+  margin: 0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+button {
+  border: none;
+  padding: .5rem;
+  border-radius: .25rem;
+}

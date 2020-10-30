@@ -1,9 +1,12 @@
 import React from 'react';
+import '../styles/header.css';
 
 function Header() {
   return (
-    <div>
-      <h1>Randit</h1>
+    <div className="row header">
+      <div className="col-6 title-box">
+        <h1 className="title">Randit</h1>
+      </div>
     </div>
   )
 }

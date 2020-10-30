@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/searchbar.css';
 
 function SearchBar() {
   return (
-    <div>
-      <button>Search</button>
+    <div className="row d-flex justify-content-center searchbar">
+      <button className="btn bg-info text-light">Search</button>
     </div>
   )
 }
