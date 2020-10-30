@@ -1,12 +1,13 @@
-import React from 'react';
-import '../styles/styles.css';
+import React, { useState } from "react";
+import "../styles/styles.css";
+import "../styles/results.css";
 
 function Results() {
   return (
-    <div className="row">
-      <h2>Results show here</h2>
+    <div className="row resultsbody">
+      <h3 className="searchtext">Searching for: {}</h3>
     </div>
-  )
+  );
 }
 
 export default Results;

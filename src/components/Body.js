@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import Results from './Results';
 import OptionsBar from './OptionsBar';
-import "../styles/styles.css";
+
 
 function Body() {
   return(

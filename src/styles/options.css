@@ -1,0 +1,14 @@
+.stylesbar {
+  width: 100%;
+  background-color:hsl(360, 33%, 84%);
+}
+
+.optionbutton {
+  width: 100%;
+  margin: 0 0 3rem 0 ;
+}
+
+.options-text {
+  font-size: 1rem;
+  margin-top: 2rem;
+}

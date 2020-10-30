@@ -5,11 +5,14 @@
 
 .body {
   background-color: hsl(35, 48%, 91%);
+  
 }
 
 .row {
-  padding: 0; /* override bootstrap */
-  margin: 0;
+  padding-left: 0; /* override bootstrap */
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .container-fluid {
