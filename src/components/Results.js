@@ -4,23 +4,29 @@ import "../styles/styles.css";
 import "../styles/results.css";
 
 function Results(props) {
-  const posts = getListOfPosts(props.results);
+  let posts = [];
+  let searchText = "";
+  if (props.searchMade) {
+    searchText = 'Searching for: "' + props.searchTerm + '"';
+    posts = getListOfPosts(props.results);
+  }
   return (
-    <div className="row resultsbody">
-      <h3 className="searchtext">Searching for: {props.searchTerm}</h3>
-      <p>Results from body: {JSON.stringify(props.results)}</p>
-      {posts}
+    <div className="resultsbody">
+      <div className="row">
+        <h3 className="searchtext">{searchText}</h3>
+      </div>
+      <div className="row">{posts}</div>
     </div>
   );
 }
 
 function getListOfPosts(results) {
   let posts = [];
-  /*
-  results.forEach((item) => {
-    <Post title={} text={} />;
-  });
-  */
+
+  for (let i = 0; i < results.data.children.length; i++) {
+    posts.push(<Post title={results.data.children[i].data.title} />);
+  }
+
   return posts;
 }
 
