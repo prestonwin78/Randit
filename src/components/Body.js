@@ -9,15 +9,27 @@ function Body() {
   const [results, updateResults] = useState({});
   return (
     <div className="body">
-      <SearchBar
-        search={() => search(changeSearchMade, changeSearchTerm, updateResults)}
-      />
-      <Results
-        searchMade={searchMade}
-        searchTerm={searchTerm}
-        results={results}
-      />
-      <OptionsBar />
+      {!searchMade && (
+        <SearchBar
+          search={() =>
+            search(changeSearchMade, changeSearchTerm, updateResults)
+          }
+        />
+      )}
+      {searchMade && (
+        <Results
+          searchMade={searchMade}
+          searchTerm={searchTerm}
+          results={results}
+        />
+      )}
+      {searchMade && (
+        <OptionsBar
+          search={() =>
+            search(changeSearchMade, changeSearchTerm, updateResults)
+          }
+        />
+      )}
     </div>
   );
 }
