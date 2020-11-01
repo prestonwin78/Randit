@@ -2,3 +2,25 @@
   width: 100%;
   background-color: hsl(46, 22%, 73%);
 }
+
+.card {
+  padding: 1rem;
+  margin-bottom: 3rem;
+  background-color: hsl(35, 48%, 95%);
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+@media only screen and (min-width: 912px) {
+  .thumbnail {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .thumbnail {
+    width: 25%;
+  }
+}

@@ -22,11 +22,19 @@ function Results(props) {
 
 function getListOfPosts(results) {
   let posts = [];
-
   for (let i = 0; i < results.data.children.length; i++) {
-    posts.push(<Post title={results.data.children[i].data.title} />);
+    const postApiData = results.data.children[i].data;
+    posts.push(
+      <Post
+        title={postApiData.title}
+        score={postApiData.ups}
+        text={postApiData.selftext}
+        thumbnail={postApiData.thumbnail}
+        date="12/02/2020"
+        link={postApiData.permalink}
+      />
+    );
   }
-
   return posts;
 }
 
