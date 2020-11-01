@@ -7,15 +7,20 @@ function Results(props) {
   let posts = [];
   let searchText = "";
   if (props.searchMade) {
-    searchText = 'Searching for: "' + props.searchTerm + '"';
+    searchText = props.searchTerm;
     posts = getListOfPosts(props.results);
   }
   return (
-    <div className="resultsbody">
-      <div className="row">
-        <h3 className="searchtext">{searchText}</h3>
+    <div className="resultscontainer">
+      <div className="resultsbody">
+        <div className="row">
+          <h4 className="searchtext">
+            <span className="searchmsg">Searching for: </span>
+            {searchText}
+          </h4>
+        </div>
+        <div className="row">{posts}</div>
       </div>
-      <div className="row">{posts}</div>
     </div>
   );
 }

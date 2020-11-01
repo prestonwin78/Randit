@@ -1,6 +1,21 @@
-.resultsbody {
-  width: 100%;
+.resultscontainer {
   background-color: hsl(46, 22%, 73%);
+}
+
+.resultsbody {
+  margin: auto;
+}
+
+.searchmsg {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-right: 0.5rem;
+}
+
+.searchtext {
+  margin-left: 1rem; /* to line up with cards */
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -17,10 +32,16 @@
   .thumbnail {
     width: 75%;
   }
+  .resultsbody {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .thumbnail {
     width: 25%;
+  }
+  .resultsbody {
+    width: 60%;
   }
 }
