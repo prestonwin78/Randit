@@ -31,7 +31,6 @@ function Body() {
           }
         />
       )}
-      <div className="remaining-space"></div>
     </div>
   );
 }

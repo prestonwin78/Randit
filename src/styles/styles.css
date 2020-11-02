@@ -5,9 +5,7 @@
 
 .body {
   background-color: hsl(35, 48%, 91%);
-}
-
-.remaining-space {
+  min-height: calc(100vh - 4.5rem);
 }
 
 .row {
