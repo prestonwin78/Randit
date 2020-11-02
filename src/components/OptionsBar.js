@@ -18,7 +18,10 @@ function OptionsBar(props) {
         <div className="col-3">
           <button
             className="bg-info text-light optionbutton"
-            onClick={props.search}
+            onClick={() => {
+              window.scrollTo(0, 0);
+              props.search();
+            }}
           >
             Another
           </button>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import Results from "./Results";
 import OptionsBar from "./OptionsBar";
+import randomWords from "random-words";
 
 function Body() {
   const [searchMade, changeSearchMade] = useState(false);
@@ -30,6 +31,7 @@ function Body() {
           }
         />
       )}
+      <div className="remaining-space"></div>
     </div>
   );
 }
@@ -46,7 +48,7 @@ const search = async function (
 };
 
 const getSearchTerm = async function () {
-  return "basketball";
+  return randomWords(); // get a random word from package
 };
 
 const makeSearchOnApi = async function (searchTerm) {

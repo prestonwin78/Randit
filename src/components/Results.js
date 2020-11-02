@@ -39,6 +39,7 @@ function getListOfPosts(results) {
         title={postApiData.title}
         score={postApiData.ups}
         text={postApiData.selftext}
+        subreddit={"r/" + postApiData.subreddit}
         thumbnail={postApiData.thumbnail}
         date={dateString}
         link={postApiData.permalink}

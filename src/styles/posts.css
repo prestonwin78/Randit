@@ -1,0 +1,33 @@
+.subreddit {
+  text-align: right;
+  font-weight: 700;
+  color: hsl(34, 53%, 48%);
+}
+
+.date {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: black;
+}
+
+.score {
+  text-align: right;
+  font-weight: bold;
+  color: black;
+}
+
+.details {
+  float: left;
+  margin-top: 1rem;
+}
+
+.date-container {
+  display: inline-block;
+  width: 50%;
+}
+
+.score-container {
+  display: inline-block;
+  width: 50%;
+}

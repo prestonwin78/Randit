@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/posts.css";
 
 function Post(props) {
   return (
@@ -10,10 +11,18 @@ function Post(props) {
         >
           {props.title}
         </a>
-        <p>{props.text}</p>
+        <p className="subreddit">{props.subreddit}</p>
         <img src={props.thumbnail} alt="" className="thumbnail"></img>
-        <p>{props.date}</p>
-        <p>Score: {props.score}</p>
+        <div className="details">
+          <div className="date-container">
+            <p className="date">{props.date}</p>
+          </div>
+          <div className="score-container">
+            <p className="score">
+              Score: <span className="scoreNum">{props.score}</span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
