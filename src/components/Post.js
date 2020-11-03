@@ -2,6 +2,10 @@ import React from "react";
 import "../styles/posts.css";
 
 function Post(props) {
+  let title = props.title.substring(0, 300);
+  if (props.title.length > 300) {
+    title += "...";
+  }
   return (
     <div className="col-4">
       <div className="card">
@@ -9,7 +13,7 @@ function Post(props) {
           href={`https://reddit.com${props.link}`}
           className="post-title text-dark"
         >
-          {props.title}
+          {title}
         </a>
         <p className="subreddit">{props.subreddit}</p>
         <img src={props.thumbnail} alt="" className="thumbnail"></img>

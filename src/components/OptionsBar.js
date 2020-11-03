@@ -12,7 +12,7 @@ function OptionsBar(props) {
       </div>
       <div className="row">
         <div className="col-3"></div>
-        <div className="col-3">
+        <div className="col-3" style={{ display: "none" }}>
           <button className="bg-secondary text-light optionbutton">More</button>
         </div>
         <div className="col-3">
